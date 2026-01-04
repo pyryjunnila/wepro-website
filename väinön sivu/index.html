@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head id="head">
+<link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+<header>
+<img src="logo.jpeg">
+</header>
+
+<div id="container">
+
+<div id="left-container">
+<h1>Rakennuspalvelut luotettavasti</h1>
+<hr class="section-divider">
+<br></br>
+<div id="about-text">
+<p>Olemme kotimainen rakennusfirma, joka tarjoaa monipuolisia rakennus- ja remontointipalveluja niin yksityisille kuin yrityksille. 
+   Toteutamme työt huolellisesti alusta loppuun, laadusta tinkimättä. Palveluihimme kuuluvat uudisrakentaminen, saneeraukset sekä erilaiset korjaustyöt. Tavoitteenamme on toimiva lopputulos ja tyytyväinen asiakas.</p>
+</div>
+
+
+</div>
+<div id="right-container">
+    <div class="gallery">
+        <img id="gallery-image" src="logo.jpeg">
+        <div class="gallery-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+            <span class="dot" data-index="4"></span>
+        </div>
+    </div>
+</div>
+</div>
+<script src="gallery.js"></script>
+
+
+<div id="footer-text">
+
+</div>
+<footer>
+    <h2>Ota yhteyttä</h2>
+    <div id="form-status"></div>
+    <form id="contact-form-element">
+        <label for="name">Nimi *:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Sähköposti *:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Viesti *:</label>
+        <textarea id="message" name="message" required></textarea>
+        <div class="form-group">
+    <label class="checkbox-label">
+        <input type="checkbox" id="privacy" name="privacy" required>
+        Hyväksyn, että tietojani käytetään yhteydenottoa varten. 
+        <a href="privacy.html" target="_blank">Lue tietosuojaseloste</a>
+    </label>
+</div>
+        <button id="submit-button" type="submit">Lähetä</button>
+    </form>
+    <script src="config.js"></script>
+    <script src="contact.js"></script>
+    </div>
+</footer>
+</body>
+</html>

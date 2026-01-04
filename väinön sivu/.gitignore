@@ -6,7 +6,8 @@ bin-release/
 
 # Other files and folders
 .settings/
-
+config.js
+settings.json
 # Executables
 *.swf
 *.air

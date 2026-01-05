@@ -1,6 +1,6 @@
 const images = [
     'logo.jpeg',
-    'image2.jpeg',
+    'faceit.jpg',
     'image3.jpeg',
     'image4.jpeg',
     'image5.jpeg'

@@ -1,87 +1,166 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head id="head">
-<link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
+
 <body>
-<header>
-<img src="logo.jpeg">
-</header>
+    <header>
+        <div id="header-logo">
+            <img src="logo.jpeg">
+        </div>
+        <div id="header-title">
+            <button onClick="location.href='#footer'">Ota yhteyttä</button>
+        </div>
+    </header>
 
-<div id="container">
+    <div id="container">
 
-<div id="left-container">
-<h1>Rakennuspalvelut luotettavasti</h1>
-<hr class="section-divider">
-<br></br>
-<div id="about-text">
-<p>Olemme kotimainen rakennusfirma, joka tarjoaa monipuolisia rakennus- ja remontointipalveluja niin yksityisille kuin yrityksille. 
-   Toteutamme työt huolellisesti alusta loppuun, laadusta tinkimättä. Palveluihimme kuuluvat uudisrakentaminen, saneeraukset sekä erilaiset korjaustyöt. Tavoitteenamme on toimiva lopputulos ja tyytyväinen asiakas.</p>
-</div>
+        <div id="left-container">
+            <h1>Rakennuspalvelut luotettavasti</h1>
+            <hr class="section-divider">
+            <br>
+            <div id="about-text">
+                <p>Olemme kotimainen rakennusfirma, joka tarjoaa monipuolisia rakennus- ja remontointipalveluja niin
+                    yksityisille kuin yrityksille.
+                    Toteutamme työt huolellisesti alusta loppuun, laadusta tinkimättä. Palveluihimme kuuluvat
+                    uudisrakentaminen, saneeraukset sekä erilaiset korjaustyöt. Tavoitteenamme on toimiva lopputulos ja
+                    tyytyväinen asiakas.</p>
+            </div>
+            <br>
+            <div id="interested-text">
+                <h1>Kiinnostuitko?</h1>
+                <hr class="section-divider">
+                <br>
+                <button onClick="location.href='services.html'" id="read-more"></button>
+            </div>
 
-
-</div>
-<div id="right-container">
-    <div class="gallery">
-        <img id="gallery-image" src="logo.jpeg">
-        <div class="gallery-dots">
-            <span class="dot active" data-index="0"></span>
-            <span class="dot" data-index="1"></span>
-            <span class="dot" data-index="2"></span>
-            <span class="dot" data-index="3"></span>
-            <span class="dot" data-index="4"></span>
+        </div>
+        <div id="right-container">
+            <div class="gallery">
+                <img id="gallery-image" src="sigmabro.jpg">
+                <div class="gallery-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                </div>
+            </div>
+            <br><br>
+            <h1>Miksi valita meidät?</h1>
+            <br></br>
+            <hr class="section-divider">
+            <div id="why-us-text">
+                <p>Vuosien kokemus ja ammattitaito takaavat laadukkaan lopputuloksen. Käytämme vain laadukkaita
+                    materiaaleja ja työmme ovat takuulla. Selkeät aikataulut ja hinnat - ei yllätyksiä. Kuuntelemme
+                    asiakasta ja toimimme sovitusti. Luotettava kumppani, joka hoitaa projektisi alusta loppuun.</p>
+            </div>
         </div>
     </div>
-</div>
-</div>
-<script src="gallery.js"></script>
+    <script src="gallery.js"></script>
 
-<div id="footer-text">
+    <div id="previous-projects">
+        <div id="previous-projects-text">
+            <h1>Aiemmat projektit</h1>
+            <br></br>
+            <hr class="section-divider2">
+            <br></br>
+            <div class="project-gallery">
+                <div class="project-gallery">
+                    <div class="project-card">
+                        <img src="sigmabro.jpg" alt="Keittiöremontti">
+                        <div class="project-info">
+                            <h3>Keittiöremontti</h3>
+                            <p>Moderni keittiöremontti, jossa yhdistyy toimivuus ja tyylikkyys.</p>
+                            <div class="project-meta">
+                                <span>2025</span>
+                                <span>Jyväskylä</span>
+                                <span> <button id="project-button"
+                                        onClick="location.href='project1.html'"></button> </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="sigmabro.jpg" alt="Keittiöremontti">
+                        <div class="project-info">
+                            <h3>Keittiöremontti</h3>
+                            <p>Moderni keittiöremontti, jossa yhdistyy toimivuus ja tyylikkyys.</p>
+                            <div class="project-meta">
+                                <span>2025</span>
+                                <span>Jyväskylä</span>
+                                <span> <button id="project-button"
+                                        onClick="location.href='project2.html'"></button></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="sigmabro.jpg" alt="Keittiöremontti">
+                        <div class="project-info">
+                            <h3>Keittiöremontti</h3>
+                            <p>Moderni keittiöremontti, jossa yhdistyy toimivuus ja tyylikkyys.</p>
+                            <div class="project-meta">
+                                <span>2025</span>
+                                <span>Jyväskylä</span>
+                                <span> <button id="project-button"
+                                        onClick="location.href='project3.html'"></button></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-</div>
-<footer>
-    <h2>Ota yhteyttä</h2>
-    <br></br>
-    <hr class="footer-section-divider">
-    <br></br>
-    <div id="contact-container"></div>
-    <div id="left-footer-container">
-    <form id="contact-form-element">
-        <label for="name">Nimi *:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Sähköposti *:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="message">Viesti *:</label>
-        <textarea id="message" name="message" required></textarea>
-        <div class="form-group">
-    <label class="checkbox-label">
-        <input type="checkbox" id="privacy" name="privacy" required>
-        Hyväksyn, että tietojani käytetään yhteydenottoa varten. 
-        <a href="privacy.html" target="_blank">Lue tietosuojaseloste</a>
-    </label>
-</div>
-        <button id="submit-button" type="submit">Lähetä</button>
-    </form>
-    <script src="config.js"></script>
-    <script src="contact.js"></script>
-    </div>
+        <div id="footer-text">
+        </div>
+        <footer id="footer">
+            <h2>Ota yhteyttä</h2>
+            <br></br>
+            <hr class="footer-section-divider">
+            <br></br>
+            <div id="contact-container"></div>
+            <div id="left-footer-container">
+                <form id="contact-form-element">
+                    <label for="name">Nimi *:</label>
+                    <input type="text" id="name" name="name" required>
 
-    <div id="right-footer-container">
-    <div id="footer-info">
-       <p>Puh. 040 123 4567 </p>
- <br>
-       <p>Sposti. example@gmail.com </p> 
-    <br>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1858.5979795201654!2d25.73484247749216!3d62.23570917508681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4685741447203509%3A0x3214d495d1d5bc1!2sVapaudenkatu%2025%2C%2040100%20Jyv%C3%A4skyl%C3%A4!5e0!3m2!1sfi!2sfi!4v1767575725718!5m2!1sfi!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-</div>
-</footer>
+                    <label for="email">Sähköposti *:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Viesti *:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            Hyväksyn, että tietojani käytetään yhteydenottoa varten.
+                            <a href="privacy.html">Lue tietosuojaseloste</a>
+                        </label>
+                    </div>
+                    <button id="submit-button" type="submit">Lähetä</button>
+                </form>
+                <script src="config.js"></script>
+                <script src="contact.js"></script>
+            </div>
+
+            <div id="right-footer-container">
+                <div id="footer-info">
+                    <p>Puh. <a href="tel:0401234567">040 123 4567</a></p>
+                    <br>
+                    <p>Sposti. example@gmail.com </p>
+                    <br>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1858.5979795201654!2d25.73484247749216!3d62.23570917508681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4685741447203509%3A0x3214d495d1d5bc1!2sVapaudenkatu%2025%2C%2040100%20Jyv%C3%A4skyl%C3%A4!5e0!3m2!1sfi!2sfi!4v1767575725718!5m2!1sfi!2sfi"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </footer>
 </body>
+
 </html>

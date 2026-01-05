@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palvelumme - Rakennuspalvelut</title>
+</head>
+
+<body>
+    <header>
+        <div id="header-logo">
+            <img src="logo.jpeg">
+        </div>
+        <div id="header-title">
+            <button onClick="location.href='index.html'">Takaisin etusivulle</button>
+        </div>
+    </header>
+
+    <div id="services-container">
+        <div class="services-hero">
+            <h1>Palvelumme</h1>
+            <br>
+            <hr class="section-divider">
+            <div id="about-text">
+                <p>Tarjoamme kattavat rakennuspalvelut ammattitaidolla ja luotettavasti</p>
+            </div>
+        </div>
+
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <div class="service-icon">🏗️</div>
+                <h3>Uudisrakentaminen</h3>
+                <p>Suunnittelusta toteutukseen - rakennamme unelmiesi talon. Tarjoamme täyden palvelun
+                    avaimet käteen -periaatteella.</p>
+                <ul>
+                    <li>Omakotitalot</li>
+                    <li>Vapaa-ajan asunnot</li>
+                    <li>Liike- ja teollisuustilat</li>
+                </ul>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="service-icon">🔨</div>
+                <h3>Saneeraukset</h3>
+                <p>Perusteellinen remontti vanhaan rakennukseen. Huolehdimme kaikista yksityiskohdista
+                    ja varmistamme laadukkaan lopputuloksen.</p>
+                <ul>
+                    <li>Kylpyhuoneremontit</li>
+                    <li>Keittiöremontit</li>
+                    <li>Märkätilojen korjaukset</li>
+                </ul>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Korjaustyöt</h3>
+                <p>Nopeat ja ammattitaitoiset korjaukset kaiken kokoisiin tarpeisiin. Suuret ja pienet
+                    työt yhtä huolella hoidettuna.</p>
+                <ul>
+                    <li>Pintaremontti</li>
+                    <li>Lattiatyöt</li>
+                    <li>Maalaustyöt</li>
+                </ul>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <div class="service-icon">🏡</div>
+                <h3>Lisärakentaminen</h3>
+                <p>Tarvitsetko lisää tilaa? Rakennamme laadukkaat lisärakennelmat tai laajennukset
+                    olemassa olevaan rakennukseen.</p>
+                <ul>
+                    <li>Piharakennukset</li>
+                    <li>Autotallit</li>
+                    <li>Kodinlaajennukset</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="process-section">
+            <h1>Näin toimimme</h1>
+            <br>
+            <hr class="section-divider">
+            <br>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Yhteydenotto</h3>
+                    <p>Otat yhteyttä ja kerrot tarpeistasi. Sovimme maksuttoman kartoituskäynnin.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Suunnittelu</h3>
+                    <p>Käymme paikan päällä ja laaditaan selkeä suunnitelma ja tarjous.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Toteutus</h3>
+                    <p>Aloitamme työt sovitusti ja pidämme sinut ajan tasalla projektin etenemisestä.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Valmis</h3>
+                    <p>Luovutamme projektin ja varmistamme että olet tyytyväinen lopputulokseen.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Kiinnostuitko palveluistamme?</h2>
+            <br>
+            <hr class="section-divider">
+            <p>Ota yhteyttä ja kysy lisää - vastaamme mielellämme!</p>
+            <br>
+            <button id="contact-button" onClick="location.href='services.html#footer'"></button>
+        </div>
+    </div>
+
+    <div id="footer-text">
+    </div>
+    <footer id="footer">
+        <h2>Ota yhteyttä</h2>
+        <br></br>
+        <hr class="footer-section-divider">
+        <br></br>
+        <div id="contact-container"></div>
+        <div id="left-footer-container">
+            <form id="contact-form-element">
+                <label for="name">Nimi *:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Sähköposti *:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Viesti *:</label>
+                <textarea id="message" name="message" required></textarea>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        Hyväksyn, että tietojani käytetään yhteydenottoa varten.
+                        <a href="privacy.html" target="_blank">Lue tietosuojaseloste</a>
+                    </label>
+                </div>
+                <button id="submit-button" type="submit">Lähetä</button>
+            </form>
+            <script src="config.js"></script>
+            <script src="contact.js"></script>
+        </div>
+
+        <div id="right-footer-container">
+            <div id="footer-info">
+                <p>Puh. <a href="tel:0401234567">040 123 4567</a></p>
+                <br>
+                <p>Sposti. example@gmail.com </p>
+                <br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1858.5979795201654!2d25.73484247749216!3d62.23570917508681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4685741447203509%3A0x3214d495d1d5bc1!2sVapaudenkatu%2025%2C%2040100%20Jyv%C3%A4skyl%C3%A4!5e0!3m2!1sfi!2sfi!4v1767575725718!5m2!1sfi!2sfi"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

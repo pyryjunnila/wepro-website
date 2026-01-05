@@ -1,9 +1,9 @@
 const images = [
-    'logo.jpeg',
-    'faceit.jpg',
-    'image3.jpeg',
-    'image4.jpeg',
-    'image5.jpeg'
+    'sigmabro.jpg',
+    'sigmabro.jpg',
+    'sigmabro.jpg',
+    'sigmabro.jpg',
+    'sigmabro.jpg',
 ];
 
 let currentIndex = 0;

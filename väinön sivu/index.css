@@ -79,6 +79,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 40px;
     position: sticky;
     top: 0;
@@ -86,6 +87,12 @@ header {
     animation: fadeInDown 0.6s ease-out;
     transition: all 0.3s ease;
     box-shadow: 0 2px 20px rgba(1, 42, 28, 0.15);
+}
+
+#header-logo {
+    position: absolute;
+    padding-left: 5%;
+    transform: translateX(-50%);
 }
 
 header img {
@@ -96,6 +103,35 @@ header img {
 
 header img:hover {
     transform: scale(1.05);
+}
+
+#header-title {
+    margin-left: auto;
+}
+
+#header-title button {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#header-title button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+#header-title h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
 }
 
 /* ===== HERO / MAIN CONTAINER ===== */
@@ -144,6 +180,90 @@ header img:hover {
 }
 
 #about-text p:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+#left-container {
+    animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+#read-more {
+    background: linear-gradient(135deg, #012a1c 0%, #024d30 100%);
+    color: white;
+    border: none;
+    padding: 24px 32px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 20px rgba(1, 42, 28, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+#read-more::before {
+    content: 'Lue lisää';
+}
+
+#read-more::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+#read-more:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(1, 42, 28, 0.3);
+}
+
+#read-more:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+#read-more:active {
+    transform: translateY(-2px);
+}
+
+#left-container h1 {
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+.section-divider {
+    border: none;
+    height: 4px;
+    width: 80px;
+    background: linear-gradient(90deg, #012a1c, #024d30);
+    margin: 0 0 32px 0;
+    border-radius: 2px;
+}
+
+#why-us-text {
+    padding: 0;
+    max-width: 540px;
+}
+
+#why-us-text p {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#why-us-text p:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
 }
@@ -243,12 +363,139 @@ header img:hover {
     font-size: 14px;
 }
 
+#previous-projects-text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-divider2 {
+    border: none;
+    height: 3px;
+    width: 60px;
+    background: linear-gradient(90deg, #012a1c, #024d30);
+    margin: 0 auto 40px;
+    border-radius: 2px;
+}
+
+.project-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 0 40px 40px;
+    min-width: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-info {
+    padding: 24px;
+}
+
+.project-info h3 {
+    color: #012a1c;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.project-info p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.project-meta {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #e9ecef;
+}
+
+.project-meta span {
+    color: #012a1c;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#project-button {
+    background: linear-gradient(135deg, #012a1c 0%, #024d30 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 20px rgba(1, 42, 28, 0.2);
+    margin-top: 16px;
+    display: block;
+    width: 100%;
+}
+
+#project-button::before {
+    content: 'Lue lisää';
+}
+
+#project-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+#project-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(1, 42, 28, 0.3);
+}
+
+#project-button:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+#project-button:active {
+    transform: translateY(0);
+}
+
 /* ===== FOOTER / CONTACT SECTION ===== */
 footer {
     background: linear-gradient(135deg, #012a1c 0%, #013d28 100%);
     color: white;
     padding: 60px 0 40px;
     margin-top: 40px;
+    max-height: 900px;
 }
 
 footer h2 {
@@ -295,6 +542,17 @@ footer h2 {
     color: white;
     display: flex;
     flex-direction: column;
+}
+
+#footer-info a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#footer-info a:hover {
+    color: #7fd4a8;
+    text-decoration: underline;
 }
 
 #footer-info iframe {
@@ -425,90 +683,140 @@ footer::after {
     clear: both;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 1024px) {
-    #container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        padding: 60px 40px;
-    }
-    
-    #left-container,
-    #right-container {
-        width: 100%;
-    }
-    
-    #about-text {
-        max-width: 100%;
-    }
+/* ===== SERVICES PAGE ===== */
+
+#services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 80px 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: calc(100vh - 80px);
+    align-items: center;
+    animation: fadeIn 0.8s ease-out 0.2s both;
 }
 
-@media (max-width: 768px) {
-    header {
-        padding: 0 20px;
-        height: 70px;
-    }
-    
-    header img {
-        height: 50px;
-    }
-    
-    #container {
-        padding: 40px 20px;
-    }
-    
-    .section-divider {
-        width: 60px;
-    }
-    
-    #about-text p {
-        padding: 24px;
-    }
-    
-    footer {
-        padding: 40px 0 30px;
-    }
-    
-    #left-footer-container,
-    #right-footer-container {
-        float: none;
-        width: 100%;
-        padding: 0 20px;
-        text-align: center;
-    }
-    
-    #right-footer-container {
-        margin-top: 30px;
-        padding-top: 30px;
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    
-    .gallery-dots {
-        gap: 10px;
-    }
-    
-    .dot.active {
-        width: 24px;
-    }
+.section-divider {
+    border: none;
+    height: 4px;
+    width: 80px;
+    background: linear-gradient(90deg, #012a1c, #024d30);
+    margin: 0 0 32px 0;
+    border-radius: 2px;
 }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 28px;
-    }
-    
-    #about-text p {
-        padding: 20px;
-        font-size: 15px;
-    }
-    
-    #contact-form-element input,
-    #contact-form-element textarea {
-        padding: 12px 14px;
-    }
-    
-    #submit-button {
-        width: 100%;
-        padding: 14px;
-    }
+.service-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 12px 24px;
+    margin: 12px 0;
+    max-width: 500px;
 }
+
+.service-card:nth-child(odd) {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.service-card:nth-child(even) {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.service-card ul li {
+    padding: 8px 0;
+    color: #555;
+    font-size: 15px;
+    position: relative;
+    padding-left: 24px;
+}
+
+.service-card ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #012a1c;
+    font-weight: bold;
+}   
+
+.process-steps{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 40px;
+    align-items: center;
+    animation: fadeIn 0.8s ease-out 0.2s both;
+}
+
+.section-divider {
+    border: none;
+    height: 4px;
+    width: 80px;
+    background: linear-gradient(90deg, #012a1c, #024d30);
+    margin: 0 0 32px 0;
+    border-radius: 2px;
+}
+
+.cta-section h2 {
+    color: #012a1c;
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+#contact-button {
+    background: linear-gradient(135deg, #012a1c 0%, #024d30 100%);
+    color: white;
+    border: none;
+    padding: 24px 32px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 20px rgba(1, 42, 28, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+#contact-button::before {
+    content: 'Ota yhteyttä';
+}
+
+#contact-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+#contact-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(1, 42, 28, 0.3);
+}
+
+#contact-button:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+#contact-button:active {
+    transform: translateY(-2px);
+}
+
+/* ===== Project pages ===== */
+

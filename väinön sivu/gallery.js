@@ -39,4 +39,4 @@ updateGallery();
 setInterval(() => {
     currentIndex = (currentIndex + 1) % images.length;
     updateGallery();
-}, 10000);
+}, 5000);

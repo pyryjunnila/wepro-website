@@ -1,9 +1,9 @@
 const images = [
-    'sigmabro.jpg',
-    'sigmabro.jpg',
-    'sigmabro.jpg',
-    'sigmabro.jpg',
-    'sigmabro.jpg',
+    'kattoremppa lopputulos.jpeg',
+    'kattoremppa aloitus.jpeg',
+    'kattoremppa valikuva.jpeg',
+    'kattoremppa valikuva2.jpeg',
+    'kattoremppa vikakuva.jpeg',
 ];
 
 let currentIndex = 0;

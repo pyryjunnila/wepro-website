@@ -495,7 +495,7 @@ footer {
     color: white;
     padding: 60px 0 40px;
     margin-top: 40px;
-    max-height: 900px;
+
 }
 
 footer h2 {
@@ -753,13 +753,11 @@ footer::after {
     animation: fadeIn 0.8s ease-out 0.2s both;
 }
 
-.section-divider {
-    border: none;
-    height: 4px;
-    width: 80px;
-    background: linear-gradient(90deg, #012a1c, #024d30);
-    margin: 0 0 32px 0;
-    border-radius: 2px;
+.cta-section {
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 16px;
+    margin-top: 40px;
 }
 
 .cta-section h2 {

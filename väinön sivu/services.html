@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head id="head">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mobile.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palvelumme - Rakennuspalvelut</title>
+    <meta name="description"
+        content="Luotettava rakennusfirma Jyväskylässä. Tarjoamme laadukkaita rakennus- ja remontointipalveluja.">
+    <title>Rakennuspalvelut - Wepro</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -26,102 +29,103 @@
             <div id="about-text">
                 <p>Tarjoamme kattavat rakennuspalvelut ammattitaidolla ja luotettavasti</p>
             </div>
+            <br>
+            <div class="cta-section">
+                <h2>Kiinnostuitko palveluistamme?</h2>
+                <br>
+                <hr class="section-divider">
+                <p>Ota yhteyttä ja kysy lisää!</p>
+                <br>
+                <button id="contact-button" onClick="location.href='services.html#footer'"></button>
+            </div>
         </div>
         <div class="services-list">
             <!-- Service 2 -->
             <div class="service-card">
-                <div class="service-icon">🔨</div>
-                <h3>Saneeraukset</h3>
-                <p>Perusteellinen remontti vanhaan rakennukseen. Huolehdimme kaikista yksityiskohdista
-                    ja varmistamme laadukkaan lopputuloksen.</p>
+                <div class="service-icon">🏠</div>
+                <h3>Kattoremontti</h3>
+                <p>Tarjoamme laadukkaita kattoremonttipalveluja. Uudistamme katot turvallisesti ja tehokkaasti.</p>
                 <ul>
-                    <li>Kylpyhuoneremontit</li>
-                    <li>Keittiöremontit</li>
-                    <li>Märkätilojen korjaukset</li>
+                    <li>Vanhan katon purku</li>
+                    <li>Uuden katon asennus</li>
+                    <li>Kattoturvatuotteet</li>
                 </ul>
             </div>
 
             <!-- Service 3 -->
             <div class="service-card">
                 <div class="service-icon">🔧</div>
-                <h3>Korjaustyöt</h3>
-                <p>Nopeat ja ammattitaitoiset korjaukset kaiken kokoisiin tarpeisiin. Suuret ja pienet
-                    työt yhtä huolella hoidettuna.</p>
+                <h3>Lattia- ja seinäremontti</h3>
+                <p>Korjaamme lattia- ja seinävauriot ammattitaidolla. Vaihdamme lahonneet puut ja uudistamme rakenteet.
+                </p>
                 <ul>
-                    <li>Pintaremontti</li>
-                    <li>Lattiatyöt</li>
-                    <li>Maalaustyöt</li>
+                    <li>Lattioiden uusiminen</li>
+                    <li>Lahonneiden puiden vaihto</li>
+                    <li>Kosteusvaurioiden korjaus</li>
                 </ul>
             </div>
 
             <!-- Service 4 -->
             <div class="service-card">
-                <div class="service-icon">🏡</div>
-                <h3>Lisärakentaminen</h3>
-                <p>Tarvitsetko lisää tilaa? Rakennamme laadukkaat lisärakennelmat tai laajennukset
-                    olemassa olevaan rakennukseen.</p>
+                <div class="service-icon">🎨</div>
+                <h3>Maalaustyöt</h3>
+                <p>Toteutamme laadukkaat maalaustyöt sekä sisä- että ulkotiloissa. Huolellinen valmistelu ja siisti
+                    jälki.</p>
                 <ul>
-                    <li>Piharakennukset</li>
-                    <li>Autotallit</li>
-                    <li>Kodinlaajennukset</li>
+                    <li>Ulkomaalaus</li>
+                    <li>Sisämaalaus</li>
+                    <li>Pintojen valmistelu ja käsittely</li>
                 </ul>
             </div>
-        </div>
-    </div>
 
-        <div class="cta-section">
-            <h2>Kiinnostuitko palveluistamme?</h2>
-            <br>
-            <hr class="section-divider2">
-            <p>Ota yhteyttä ja kysy lisää - vastaamme mielellämme!</p>
-            <br>
-            <button id="contact-button" onClick="location.href='services.html#footer'"></button>
-        </div>
-    </div>
-    <div id="footer-text">
-    </div>
-    <footer id="footer">
-        <h2>Ota yhteyttä</h2>
-        <br></br>
-        <hr class="footer-section-divider">
-        <br></br>
-        <div id="contact-container"></div>
-        <div id="left-footer-container">
-            <form id="contact-form-element">
-                <label for="name">Nimi *:</label>
-                <input type="text" id="name" name="name" required>
 
-                <label for="email">Sähköposti *:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Viesti *:</label>
-                <textarea id="message" name="message" required></textarea>
-                <div class="form-group">
-                    <label class="checkbox-label">
-                        <input type="checkbox" id="privacy" name="privacy" required>
-                        Hyväksyn, että tietojani käytetään yhteydenottoa varten.
-                        <a href="privacy.html" target="_blank">Lue tietosuojaseloste</a>
-                    </label>
-                </div>
-                <button id="submit-button" type="submit">Lähetä</button>
-            </form>
-            <script src="config.js"></script>
-            <script src="contact.js"></script>
         </div>
 
-        <div id="right-footer-container">
-            <div id="footer-info">
-                <p>Puh. <a href="tel:0401234567">040 123 4567</a></p>
-                <br>
-                <p>Sposti. example@gmail.com </p>
-                <br>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1858.5979795201654!2d25.73484247749216!3d62.23570917508681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4685741447203509%3A0x3214d495d1d5bc1!2sVapaudenkatu%2025%2C%2040100%20Jyv%C3%A4skyl%C3%A4!5e0!3m2!1sfi!2sfi!4v1767575725718!5m2!1sfi!2sfi"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+        <div id="footer-text">
+        </div>
+        <footer id="footer">
+            <h2>Ota yhteyttä</h2>
+            <br></br>
+            <hr class="footer-section-divider">
+            <br></br>
+            <div id="contact-container"></div>
+            <div id="left-footer-container">
+                <form id="contact-form-element">
+                    <label for="name">Nimi *:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Sähköposti *:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Viesti *:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            Hyväksyn, että tietojani käytetään yhteydenottoa varten.
+                            <a href="privacy.html">Lue tietosuojaseloste</a>
+                        </label>
+                    </div>
+                    <button id="submit-button" type="submit">Lähetä</button>
+                </form>
+                <script src="config.js"></script>
+                <script src="contact.js"></script>
             </div>
-        </div>
-    </footer>
+
+            <div id="right-footer-container">
+                <div id="footer-info">
+                    <!-- Kysy yhteystiedot asiakkaalta -->
+                    <p>Puh. <a href="tel:0401903317"> <p>00000000</p></a></p>
+                    <br>
+                    <p>Sähköposti: <a href="mailto:vaino.pyrro@gmail.com"><p>vaino.pyrro@gmail.com</p></a></p>
+                    <br>
+                    <p> Y-tunnus:                    <p> 00000000 </p> </p>
+
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>

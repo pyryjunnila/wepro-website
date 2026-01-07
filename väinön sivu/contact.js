@@ -5,7 +5,6 @@ const config = {
     template2: window.EMAIL_CONFIG.template2
 };
 
-
 // Initialize EmailJS
 emailjs.init(window.EMAIL_CONFIG.publicKey);
 

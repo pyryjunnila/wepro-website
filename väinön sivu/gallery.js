@@ -1,9 +1,9 @@
 const images = [
-    'sigmabro.jpg',
-    'sigmabro.jpg',
-    'sigmabro.jpg',
-    'sigmabro.jpg',
-    'sigmabro.jpg',
+    'placeholder.jpg',
+      'placeholder.jpg',
+        'placeholder.jpg',
+          'placeholder.jpg',
+            'placeholder.jpg',
 ];
 
 let currentIndex = 0;

@@ -1,0 +1,798 @@
+/* ===== MOBILE & TABLET RESPONSIVE STYLES ===== */
+
+/* Tablet - Large (1024px and below) */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 270px;
+        padding: 0 20px;
+    }
+
+    #header-logo {
+        position: relative;
+        padding-left: 0;
+        transform: none;
+    }
+
+    header img {
+        height: 205px;
+    }
+
+    #container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 40px 30px;
+    }
+
+    #header-title button {
+        height: 100px;
+        width: 250px;    border-radius: 15px;
+    }
+
+    #services-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 40px 30px;
+    }
+
+    .services-hero {
+        margin-bottom: 20px;
+    }
+
+    .services-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    /* Projects */
+    #project-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 30px;
+    }
+
+    #project-container .gallery {
+        position: relative;
+        top: 0;
+        max-width: 100%;
+    }
+
+    .project-gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-card {
+        width: calc(50% - 20px);
+        min-width: 300px;
+    }
+
+    #footer {
+    width: 100%;
+    }
+
+    #left-footer-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 40px;
+    }
+
+    #right-footer-container {
+        width: 100%;
+        padding: 20px 0;
+                display: flex;
+        justify-content: center;
+    }
+
+    #footer-info  {
+        display: flex;
+        font-size: 14px;
+                flex-direction: row;
+       gap: 15px;
+    }
+
+    #footer-info iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Tablet - Small (768px and below) */
+@media screen and (max-width: 768px) {
+    /* Header */
+    header {
+        height: 90px;
+        padding: 0 20px;
+    }
+
+    #header-logo {
+        position: relative;
+        padding-left: 0;
+        transform: none;
+    }
+
+    header img {
+        height: 65px;
+    }
+
+    #header-title button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: clamp(28px, 6vw, 40px);
+    }
+
+    h2 {
+        font-size: clamp(20px, 4vw, 28px);
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* Main Container */
+    #container {
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    #services-container {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .services-hero {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .services-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 14px;
+        width: 100%;
+    }
+
+    /* Left Container */
+    #about-text,
+    #why-us-text {
+        max-width: 100%;
+    }
+
+    #about-text p,
+    #why-us-text p {
+        padding: 24px;
+        font-size: 15px;
+    }
+
+    #read-more,
+    #contact-button {
+        width: 100%;
+        padding: 18px 24px;
+        font-size: 15px;
+    }
+
+    /* Gallery */
+    .gallery {
+        border-radius: 16px;
+    }
+
+    #gallery-image {
+        aspect-ratio: 16/10;
+    }
+
+    .gallery-dots {
+        padding: 16px;
+        gap: 10px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .dot.active {
+        width: 24px;
+    }
+
+    /* Projects Section */
+    #previous-projects {
+        padding: 40px 0;
+    }
+
+    .project-gallery {
+        flex-direction: column;
+        padding: 0 24px 30px;
+        gap: 16px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project-card img {
+        height: 200px;
+    }
+
+    .project-info {
+        padding: 20px;
+    }
+
+    .project-info h3 {
+        font-size: 18px;
+    }
+
+    .project-info p {
+        font-size: 14px;
+    }
+
+    .project-meta {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .project-meta span {
+        font-size: 12px;
+    }
+
+    #project-button {
+        padding: 10px 20px;
+        font-size: 13px;
+        margin-top: 12px;
+    }
+
+    /* Services */
+    .service-card {
+        max-width: 100%;
+        padding: 20px;
+        margin: 12px 0;
+    }
+
+    .service-card:nth-child(odd),
+    .service-card:nth-child(even) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Projects */
+    #project-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 30px 20px;
+    }
+
+    #project-container .gallery {
+        position: relative;
+        top: 0;
+        max-width: 100%;
+    }
+
+    #project-container #about-text {
+        max-width: 100%;
+    }
+
+    .service-card h3 {
+        font-size: 18px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+    }
+
+    .service-card ul li {
+        font-size: 14px;
+        padding: 6px 0;
+    }
+
+    .service-icon {
+        font-size: 40px;
+        margin-bottom: 12px;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        padding: 40px 20px;
+    }
+
+    .cta-section h2 {
+        font-size: clamp(24px, 5vw, 32px);
+    }
+
+    .cta-section p {
+        font-size: 15px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 40px 0 30px;
+    }
+
+    #contact-container {
+        padding: 0 24px;
+    }
+
+    #left-footer-container {
+        display: flex;
+        justify-content: center;
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    #right-footer-container {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    #footer-info p {
+        font-size: 13px;
+    }
+
+    #footer-info iframe {
+        width: 100%;
+        height: 280px;
+        margin-top: 20px;
+    }
+
+    /* Contact Form */
+    #contact-form-element {
+        gap: 6px;
+    }
+
+    #contact-form-element label {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    #contact-form-element input,
+    #contact-form-element textarea {
+        padding: 12px 16px;
+        font-size: 14px;
+
+    }
+
+    #contact-form-element textarea {
+        min-height: 120px;
+    }
+
+    .checkbox-label {
+        font-size: 12px;
+    }
+
+    #submit-button {
+        margin-top: 20px;
+        padding: 14px 32px;
+        font-size: 14px;
+    }
+
+    /* Dividers */
+    .section-divider {
+        width: 60px;
+        height: 3px;
+        margin-bottom: 24px;
+    }
+
+    .section-divider2,
+    .footer-section-divider {
+        width: 50px;
+        height: 3px;
+        margin-bottom: 32px;
+    }
+}
+
+/* Mobile - Large (480px and below) */
+@media screen and (max-width: 480px) {
+    /* Header */
+    header {
+        height: 80px;
+        padding: 0 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #header-logo {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 8px;
+    }
+
+    header img {
+        height: 55px;
+    }
+
+    #header-title {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    #header-title button {
+        padding: 8px 16px;
+        font-size: 13px;
+        width: auto;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 26px;
+        letter-spacing: -0.5px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    /* Main Container */
+    #container,
+    #services-container {
+        padding: 24px 16px;
+        gap: 16px;
+    }
+
+    .services-hero {
+        margin-bottom: 12px;
+    }
+
+    /* Text Sections */
+    #about-text p,
+    #why-us-text p {
+        padding: 20px;
+        font-size: 14px;
+        border-radius: 12px;
+    }
+
+    #interested-text h1 {
+        font-size: 22px;
+    }
+
+    /* Buttons */
+    #read-more,
+    #contact-button,
+    #project-button {
+        padding: 16px 20px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+    /* Gallery */
+    .gallery {
+        border-radius: 12px;
+    }
+
+    #gallery-image {
+        aspect-ratio: 4/3;
+    }
+
+    .gallery-dots {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .dot {
+        width: 7px;
+        height: 7px;
+    }
+
+    .dot.active {
+        width: 20px;
+    }
+
+    /* Projects */
+    #previous-projects-text h1 {
+        font-size: 26px;
+    }
+
+    .project-gallery {
+        padding: 0 16px 30px;
+        gap: 16px;
+    }
+
+    .project-card {
+        border-radius: 12px;
+    }
+
+    .project-card img {
+        height: 180px;
+    }
+
+    .project-info {
+        padding: 16px;
+    }
+
+    .project-info h3 {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+
+    .project-info p {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .project-meta {
+        flex-direction: column;
+        gap: 8px;
+        padding-top: 12px;
+        margin-top: 12px;
+    }
+
+    .project-meta span {
+        font-size: 11px;
+    }
+
+    #project-button {
+        font-size: 12px;
+        padding: 10px 16px;
+    }
+
+    /* Services */
+    .services-hero h1 {
+        font-size: 26px;
+    }
+
+    .services-list {
+        padding: 0;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .service-card {
+        padding: 18px;
+        margin: 0;
+        border-radius: 12px;
+        width: 100%;
+    }
+
+    .service-icon {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .service-card h3 {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+
+    .service-card p {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .service-card ul {
+        margin-top: 8px;
+    }
+
+    .service-card ul li {
+        font-size: 13px;
+        padding: 5px 0;
+        padding-left: 20px;
+    }
+
+    /* Projects */
+    #project-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 24px 16px;
+    }
+
+    #project-container .gallery {
+        position: relative;
+        top: 0;
+        max-width: 100%;
+    }
+
+    #project-container #about-text {
+        max-width: 100%;
+    }
+
+    #project-container #about-text p {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        padding: 40px 16px;
+        margin-top: 40px;
+    }
+
+    .cta-section h2 {
+        font-size: 22px;
+    }
+
+    .cta-section p {
+        font-size: 14px;
+        margin: 16px 0;
+    }
+
+    /* Footer */
+    footer {
+        padding: 32px 0 24px;
+        margin-top: 32px;
+    }
+
+    footer h2 {
+        font-size: 22px;
+    }
+
+    #contact-container {
+        padding: 0 16px;
+    }
+
+    #footer-info p {
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    #footer-info iframe {
+        height: 250px;
+        border-radius: 10px;
+        margin-top: 16px;
+    }
+
+    /* Contact Form */
+    #contact-form-element label {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+    #contact-form-element input,
+    #contact-form-element textarea {
+        padding: 10px 14px;
+        font-size: 13px;
+        border-radius: 8px;
+    }
+
+    #contact-form-element textarea {
+        min-height: 100px;
+    }
+
+    .checkbox-label {
+        font-size: 11px;
+        gap: 8px;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+    }
+
+    #submit-button {
+        padding: 12px 24px;
+        font-size: 13px;
+        margin-top: 16px;
+        border-radius: 8px;
+    }
+
+    /* Dividers */
+    .section-divider {
+        width: 50px;
+        height: 3px;
+        margin-bottom: 20px;
+    }
+
+    .section-divider2,
+    .footer-section-divider {
+        width: 40px;
+        height: 2px;
+        margin-bottom: 24px;
+    }
+}
+
+/* Mobile - Small (360px and below) */
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #container,
+    #services-container {
+        padding: 24px 12px;
+    }
+
+    header img {
+        height: 50px;
+    }
+
+    #about-text p,
+    #why-us-text p {
+        padding: 16px;
+    }
+
+    .project-card img {
+        height: 160px;
+    }
+
+    .service-card {
+        padding: 14px;
+    }
+
+    #footer-info iframe {
+        height: 220px;
+    }
+
+    #contact-form-element input,
+    #contact-form-element textarea {
+        padding: 9px 12px;
+        font-size: 12px;
+    }
+}
+
+/* Landscape Mobile Optimization */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    header {
+        height: 70px;
+    }
+
+    header img {
+        height: 50px;
+    }
+
+    #container,
+    #services-container {
+        padding: 40px 20px;
+    }
+
+    footer {
+        padding: 40px 0 30px;
+    }
+
+    #footer-info iframe {
+        height: 220px;
+    }
+}
+
+/* Fix for very small screens */
+@media screen and (max-width: 320px) {
+    #container,
+    #services-container {
+        padding: 20px 10px;
+    }
+
+    .project-gallery,
+    .services-list {
+        padding: 0 10px 24px;
+    }
+
+    #contact-container {
+        padding: 0 12px;
+    }
+
+    .service-card,
+    .project-card {
+        margin: 8px 0;
+    }
+}

@@ -1,0 +1,9 @@
+# robots.txt for wepro-rakennus.fi
+User-agent: *
+Allow: /
+
+# Disallow privacy policy from being indexed
+Disallow: /privacy.html
+
+# Sitemap location
+Sitemap: https://wepro-rakennus.fi/sitemap.xml

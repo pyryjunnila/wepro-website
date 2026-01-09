@@ -51,19 +51,6 @@
         max-width: 600px;
     }
 
-    /* Projects */
-    #project-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding: 40px 30px;
-    }
-
-    #project-container .gallery {
-        position: relative;
-        top: 0;
-        max-width: 100%;
-    }
-
     .project-gallery {
         flex-wrap: wrap;
         justify-content: center;
@@ -269,23 +256,6 @@
     .service-card:nth-child(even) {
         margin-left: 0;
         margin-right: 0;
-    }
-
-    /* Projects */
-    #project-container {
-        grid-template-columns: 1fr;
-        gap: 24px;
-        padding: 30px 20px;
-    }
-
-    #project-container .gallery {
-        position: relative;
-        top: 0;
-        max-width: 100%;
-    }
-
-    #project-container #about-text {
-        max-width: 100%;
     }
 
     .service-card h3 {
@@ -591,28 +561,6 @@
         font-size: 13px;
         padding: 5px 0;
         padding-left: 20px;
-    }
-
-    /* Projects */
-    #project-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 24px 16px;
-    }
-
-    #project-container .gallery {
-        position: relative;
-        top: 0;
-        max-width: 100%;
-    }
-
-    #project-container #about-text {
-        max-width: 100%;
-    }
-
-    #project-container #about-text p {
-        padding: 20px;
-        font-size: 14px;
     }
 
     /* CTA Section */

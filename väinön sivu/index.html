@@ -5,10 +5,24 @@
 <head id="head">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="mobile.css">
-    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpeg" href="logo.jpeg">
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
+    
         content="Luotettava rakennusfirma Jyväskylässä. Tarjoamme laadukkaita rakennus- ja remontointipalveluja.">
-    <title>Rakennuspalvelut - Wepro</title>
+    <meta name="keywords" content="wepro, wepro rakennus, rakennusfirma, rakennuspalvelut, remontointi, Jyväskylä, rakentaminen, korjausrakentaminen, ammattitaitoinen rakennusliike">
+    <meta name="author" content="Wepro Rakennus">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Wepro - Rakennuspalvelut Jyväskylässä">
+    <meta property="og:description" content="Luotettava rakennusfirma Jyväskylässä. Tarjoamme laadukkaita rakennus- ja remontointipalveluja.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wepro-rakennus.fi">
+    <meta property="og:site_name" content="Wepro Rakennus">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wepro - Rakennuspalvelut Jyväskylässä">
+    <meta name="twitter:description" content="Luotettava rakennusfirma Jyväskylässä. Tarjoamme laadukkaita rakennus- ja remontointipalveluja.">
+    <title>Wepro - Rakennuspalvelut Jyväskylässä | Luotettava Rakennusfirma</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
@@ -66,9 +80,7 @@
     </div>
     <br>
 
-
     <script src="gallery.js"></script>
-
 
     <!-- Kysy projekteista tietoa asiakkaalta -->
     <div id="previous-projects">
@@ -151,6 +163,7 @@
                         </label>
                     </div>
                     <button id="submit-button" type="submit">Lähetä</button>
+                    <div id="form-status" style="margin-top: 16px; font-weight: 600;"></div>
                 </form>
                 <script src="config.js"></script>
                 <script src="contact.js"></script>
@@ -159,15 +172,46 @@
             <div id="right-footer-container">
                 <div id="footer-info">
                     <!-- Kysy yhteystiedot asiakkaalta -->
-                    <p>Puh. <a href="tel:0401903317"> <p>00000000</p></a></p>
+                    <p>Puh. <a href="tel:0401903317">
+                            <p>040 190 3317</p>
+                        </a></p>
                     <br>
-                    <p>Sähköposti: <a href="mailto:vaino.pyrro@gmail.com"><p>vaino.pyrro@gmail.com</p></a></p>
+                    <p>Sähköposti: <a href="mailto:vaino.pyrro@gmail.com">
+                            <p>vaino.pyrro@gmail.com</p>
+                        </a></p>
                     <br>
-                    <p> Y-tunnus:                    <p> 00000000 </p> </p>
+                    <p> Y-tunnus:
+                    <p> 3477417-8 </p>
+                    </p>
 
                 </div>
             </div>
         </footer>
+
+        <!-- Structured Data for SEO -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Wepro Rakennus",
+          "image": "https://wepro-rakennus.fi/logo.jpeg",
+          "url": "https://wepro-rakennus.fi",
+          "telephone": "0401903317",
+          "email": "vaino.pyrro@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Jyväskylä",
+            "addressCountry": "FI"
+          },
+          "description": "Luotettava rakennusfirma Jyväskylässä. Tarjoamme laadukkaita rakennus- ja remontointipalveluja.",
+          "priceRange": "$$",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "1"
+          }
+        }
+        </script>
 </body>
 
 </html>

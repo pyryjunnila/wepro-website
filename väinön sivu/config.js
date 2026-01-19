@@ -6,5 +6,5 @@ window.EMAIL_CONFIG = {
 };
 
 window.RECAPTCHA_CONFIG = {
-    siteKey: "6LfjBE8sAAAAAMbErDke0XrpRTSKGW6uxiyXcHkL"  // This is your public HTML key
+    siteKey: "6LfjBE8sAAAAAMbErDke0XrpRTSKGW6uxiyXcHkL"
 };

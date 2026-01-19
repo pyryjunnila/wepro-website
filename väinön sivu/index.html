@@ -18,7 +18,7 @@
     <meta name="revisit-after" content="14 days">
     <title>Wepro - Rakennuspalvelut Jyväskylässä</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 </head>
 
 <body>
@@ -139,7 +139,7 @@
                             Hyväksyn, että tietojani käytetään yhteydenottoa varten.
                         </label>
                     </div>
-                    <input type="hidden" id="recaptcha-token" name="recaptcha-token">
+                    <div id="recaptcha-container" class="g-recaptcha" data-sitekey=""></div>
                     <button id="submit-button" type="submit">Lähetä</button>
                     <div id="form-status" style="margin-top: 16px; font-weight: 600;"></div>
                 </form>

@@ -6,5 +6,5 @@ window.EMAIL_CONFIG = {
 };
 
 window.RECAPTCHA_CONFIG = {
-    siteKey: "6LfjBE8sAAAAAMbErDke0XrpRTSKGW6uxiyXcHkL"
+    siteKey: "6Le3GE8sAAAAAOxiJQd9LzRYB9AKZeOVtwgovU1v"
 };

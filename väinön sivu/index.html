@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="fi">
 
 <head id="head">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="icon" type="image/jpeg" href="logo.jpeg">
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Wepro - Rakennuspalvelut Jyväskylässä">
     <meta name="description"
-    
-        content="Luotettava rakennusfirma Jyväskylässä. Tarjoamme laadukkaita rakennus- ja remontointipalveluja.">
-    <meta name="keywords" content="wepro, wepro rakennus, rakennusfirma, rakennuspalvelut, remontointi, Jyväskylä, rakentaminen, korjausrakentaminen, ammattitaitoinen rakennusliike">
-    <meta name="author" content="Wepro Rakennus">
+        content="Luotettava rakennusfirma Jyväskylässä. Tarjoamme laadukkaita rakennus-, remontointi- ja korjausrakentamispalveluja ammattitaidolla ja aikataulussa.">
+    <meta name="keywords"
+        content="rakennusfirma Jyväskylä, rakennuspalvelut, remontointi, kattoremontit, korjausrakentaminen, rakentaminen">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Wepro - Rakennuspalvelut Jyväskylässä">
-    <meta property="og:description" content="Luotettava rakennusfirma Jyväskylässä. Tarjoamme laadukkaita rakennus- ja remontointipalveluja.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://wepro-rakennus.fi">
-    <meta property="og:site_name" content="Wepro Rakennus">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Wepro - Rakennuspalvelut Jyväskylässä">
-    <meta name="twitter:description" content="Luotettava rakennusfirma Jyväskylässä. Tarjoamme laadukkaita rakennus- ja remontointipalveluja.">
-    <title>Wepro - Rakennuspalvelut Jyväskylässä | Luotettava Rakennusfirma</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="revisit-after" content="14 days">
+    <title>Wepro - Rakennuspalvelut Jyväskylässä</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
-   
+
 <body>
     <header>
         <div id="header-logo">
@@ -63,7 +58,7 @@
             <br></br>
             <hr class="section-divider">
             <div id="why-us-text">
-                <p>Valitse Wepro kumppaniksesi, kun haluat varmistaa, että rakennusprojektisi toteutetaan
+                <p>Valitse Wepro, kun haluat varmistaa, että rakennusprojektisi toteutetaan
                     ammattitaidolla ja aikataulussa. Meillä yhdistyvät pitkä kokemus rakennusalalta, henkilökohtainen
                     palvelu ja sitoutuminen laatuun. Jokainen projekti on meille tärkeä, olipa kyse pienestä tai
                     suuresta projektista. Tarjoamme läpinäkyvän hinnoittelun ja luotettavan toteutuksen.</p>
@@ -96,9 +91,7 @@
                         <img src="Kattoremppa lopputulos.jpeg" alt="Rakennusprojekti 1">
                         <div class="project-info">
                             <h3>Kattoremontti</h3>
-                            <p>Laadukas toteutus ammattitaidolla.</p>
                             <div class="project-meta">
-                                <span>2024-2025</span>
                                 <span>Jyväskylä</span>
                                 <span> <button id="project-button" onClick="location.href='project1.html'"></button>
                                 </span>
@@ -107,29 +100,13 @@
                     </div>
                     <!-- ASIAKAS: Lisää oikea kuva ja projektin tiedot -->
                     <div class="project-card">
-                        <img src="placeholder.jpg" alt="Rakennusprojekti 2">
+                        <img src="lattia.jpeg" alt="Rakennusprojekti 2">
                         <div class="project-info">
-                            <h3>Rakennusprojekti</h3>
-                            <p>Laadukas toteutus ammattitaidolla.</p>
+                            <h3>Lattiaremontti</h3>
                             <div class="project-meta">
-                                <span>2024-2025</span>
                                 <span>Jyväskylä</span>
                                 <span> <button id="project-button"
                                         onClick="location.href='project2.html'"></button></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ASIAKAS: Lisää oikea kuva ja projektin tiedot -->
-                    <div class="project-card">
-                        <img src="placeholder.jpg" alt="Rakennusprojekti 3">
-                        <div class="project-info">
-                            <h3>Rakennusprojekti</h3>
-                            <p>Laadukas toteutus ammattitaidolla.</p>
-                            <div class="project-meta">
-                                <span>2024-2025</span>
-                                <span>Jyväskylä</span>
-                                <span> <button id="project-button"
-                                        onClick="location.href='project3.html'"></button></span>
                             </div>
                         </div>
                     </div>
@@ -153,15 +130,16 @@
                     <label for="email">Sähköposti *:</label>
                     <input type="email" id="email" name="email" required>
 
+
                     <label for="message">Viesti *:</label>
                     <textarea id="message" name="message" required></textarea>
                     <div class="form-group">
                         <label class="checkbox-label">
                             <input type="checkbox" id="privacy" name="privacy" required>
                             Hyväksyn, että tietojani käytetään yhteydenottoa varten.
-
                         </label>
                     </div>
+                    <input type="hidden" id="recaptcha-token" name="recaptcha-token">
                     <button id="submit-button" type="submit">Lähetä</button>
                     <div id="form-status" style="margin-top: 16px; font-weight: 600;"></div>
                 </form>

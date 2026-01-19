@@ -1,10 +1,9 @@
 const images = [
-    'kattoremppa lopputulos.jpeg',
     'lattia.jpeg',
-    'lattia2.jpeg',
-    'sauna.jpeg',
-    'sauna2.jpeg',
-
+    'lattiaremppa aloitus.jpeg',
+    'lattiaremppa valikuva.jpeg',
+    'lattiaremppa valikuva2.jpeg',
+    'lattiaremppa2.jpeg',
 ];
 
 let currentIndex = 0;
@@ -14,7 +13,7 @@ const dots = document.querySelectorAll('.dot');
 
 function updateGallery() {
     galleryImage.src = images[currentIndex];
-
+    
     // Update active dot
     dots.forEach((dot, index) => {
         if (index === currentIndex) {

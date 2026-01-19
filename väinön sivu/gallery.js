@@ -14,7 +14,7 @@ const dots = document.querySelectorAll('.dot');
 
 function updateGallery() {
     galleryImage.src = images[currentIndex];
-
+    
     // Update active dot
     dots.forEach((dot, index) => {
         if (index === currentIndex) {
@@ -41,3 +41,4 @@ setInterval(() => {
     currentIndex = (currentIndex + 1) % images.length;
     updateGallery();
 }, 5000);
+

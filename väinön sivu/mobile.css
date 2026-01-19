@@ -185,12 +185,17 @@
     .checkbox-label input[type="checkbox"] {
         flex-shrink: 0;
         margin-top: 3px;
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
     }
 
-    .checkbox-label span,
-    .checkbox-label a {
+    .checkbox-label span {
         flex: 1;
         word-wrap: break-word;
+        color: #ffffff;
+        font-size: 13px;
+        line-height: 1.5;
     }
 
     #submit-button {
@@ -561,12 +566,16 @@
     .checkbox-label input[type="checkbox"] {
         flex-shrink: 0;
         margin-top: 3px;
+        width: 18px;
+        height: 18px;
+        min-width: 18px;
     }
 
-    .checkbox-label span,
-    .checkbox-label a {
+    .checkbox-label span {
         flex: 1;
         word-wrap: break-word;
+        color: #ffffff;
+        line-height: 1.5;
     }
 
     #submit-button {
@@ -969,16 +978,18 @@
     }
 
     .checkbox-label input[type="checkbox"] {
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
+        min-width: 18px;
         flex-shrink: 0;
         margin-top: 3px;
     }
 
-    .checkbox-label span,
-    .checkbox-label a {
+    .checkbox-label span {
         flex: 1;
         word-wrap: break-word;
+        color: #ffffff;
+        line-height: 1.5;
     }
 
     #submit-button {

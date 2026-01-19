@@ -1,5 +1,5 @@
 const images = [
-    'kattoremppa lopputulos.jpeg',
+    'katto2.jpeg',
     'lattia.jpeg',
     'lattia2.jpeg',
     'sauna.jpeg',

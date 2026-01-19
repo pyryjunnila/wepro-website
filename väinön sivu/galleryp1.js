@@ -1,6 +1,6 @@
 const images = [
-    'kattoremppa-lopputulos.jpeg',
-    'kattoremppa-aloitus.jpeg',
+    'katto2.jpeg',
+    'katto1.jpeg',
     'kattoremppa valikuva.jpeg',
     'kattoremppa valikuva2.jpeg',
     'kattoremppa vikakuva.jpeg',

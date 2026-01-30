@@ -761,20 +761,29 @@ footer::after {
     margin-left: 0;
 }
 
+.service-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
 .service-card ul li {
     padding: 8px 0;
     color: #555;
     font-size: 15px;
     position: relative;
-    padding-left: 24px;
+    padding-left: 28px;
+    display: block;
 }
 
 .service-card ul li::before {
     content: "✓";
     position: absolute;
     left: 0;
+    top: 8px;
     color: #012a1c;
     font-weight: bold;
+    flex-shrink: 0;
 }   
 
 .process-steps{

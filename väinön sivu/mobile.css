@@ -449,6 +449,7 @@
     .service-card ul li {
         font-size: 14px;
         padding: 6px 0;
+        padding-left: 28px;
     }
 
     .service-icon {
@@ -857,12 +858,18 @@
 
     .service-card ul {
         margin-top: 8px;
+        list-style: none;
+        padding-left: 0;
     }
 
     .service-card ul li {
         font-size: 13px;
         padding: 5px 0;
-        padding-left: 20px;
+        padding-left: 24px;
+    }
+
+    .service-card ul li::before {
+        top: 5px;
     }
 
     /* CTA Section */

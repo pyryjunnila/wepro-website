@@ -1,10 +1,5 @@
 const images = [
     'katto2.jpeg',
-    'lattia.jpeg',
-    'lattia2.jpeg',
-    'sauna.jpeg',
-    'sauna2.jpeg',
-
 ];
 
 let currentIndex = 0;

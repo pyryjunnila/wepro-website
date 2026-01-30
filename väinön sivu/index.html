@@ -30,14 +30,15 @@
 
     <div id="container">
         <div id="left-container">
-            <h1>Rakennuspalvelut luotettavasti</h1>
+            <h1>Tarjoamme rakennuspalveluita laajalla osaamisella</h1>
             <hr class="section-divider">
             <br>
             <div id="about-text">
-                <p>Wepro on vuonna 2024 perustettu jyväskyläläinen rakennusyritys, joka tarjoaa laadukkaita rakennus- ja
-                    remontointipalveluja. Yrityksemme perustuu ammattitaitoon,
-                    luotettavuuteen ja asiakaslähtöiseen palveluun. Toteutamme projektit huolellisesti alusta loppuun,
-                    ja asiakkaan tyytyväisyys on meille aina etusijalla.</p>
+                <p> Laaja osaamisemme perustuu 15-vuoden kokemukseen rakennusalalla. Osaamiseemme kuuluu korjaus- ja
+                    saneerausrakentaminen lattiasta kattoon.
+                    Toteutamme projektit yhdistämällä asiakkaan tarpeet ja nykyaikaiset rakennusmääräykset sekä lainalaisuudet.
+                    Tarjoamme remontteja avaimet käteen -periaatteella. 
+                    Mikäli projektiisi sisältyy putki- ja sähkötöitä toteutuu nekin yhdessä yhteistyökumppaneidemme kanssa. </p>
             </div>
         </div>
         <div id="right-container">
@@ -62,12 +63,22 @@
                     suuresta projektista. Tarjoamme läpinäkyvän hinnoittelun ja luotettavan toteutuksen.</p>
             </div>
         </div>
-      <div id="left-container">
+        <div id="left-container">
             <div id="interested-text">
-                <h1>Kiinnostuitko?</h1>
+                <h1>Palvelumme</h1>
                 <hr class="section-divider">
                 <br>
-                <button onClick="location.href='services.html'" id="read-more"></button>
+            <div class="service-card">
+                <div class="service-icon"></div>
+                <ul>
+                    <li>Huoneisto remontit</li>
+                    <li>Keittiö remontit</li>
+                    <li>Korjausrakentaminen</li>
+                    <li>Kattoremontit</li>
+                    <li>Ulkovuoraukset</li>
+                    <li>Tasoite- ja maalaustyöt</li>
+                </ul>
+            </div>
             </div>
         </div>
     </div>
@@ -77,31 +88,26 @@
 
     <div id="previous-projects">
         <div id="previous-projects-text">
-            <h1>Aiempia projekteja</h1>
+            <h1>Referenssit</h1>
             <br></br>
             <hr class="section-divider2">
             <br></br>
             <div class="project-gallery">
                 <div class="project-gallery">
+
                     <div class="project-card">
-                        <img src="kattoremppa valikuva.jpeg">
                         <div class="project-info">
-                            <h3>Kattoremontti</h3>
+                            <h3>Rivitie 1A huoneistoremontti</h3>
+                            <button onClick="location.href='project1.html'" id="read-more"></button>
+                            <h3>Elintarviketilan rakennus</h3>
+                            <button onClick="location.href='project2.html'" id="read-more"></button>
+                            <h3>Ulkoseinän korjaus ja kengitys</h3>
+                            <button onClick="location.href='project3.html'" id="read-more"></button>
+                            <h3>Katon- ja ulkovuorauksen peruskorjaus</h3>
+                            <button onClick="location.href='project4.html'" id="read-more"></button>
+                            <h3>Sauna/pesutilojen saneeraus</h3>
+                            <button onClick="location.href='project5.html'" id="read-more"></button>
                             <div class="project-meta">
-                                <span>Jyväskylä</span>
-                                <span> <button id="project-button" onClick="location.href='project1.html'"></button>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="lattia.jpeg" alt="Rakennusprojekti 2">
-                        <div class="project-info">
-                            <h3>Lattiaremontti</h3>
-                            <div class="project-meta">
-                                <span>Jyväskylä</span>
-                                <span> <button id="project-button"
-                                        onClick="location.href='project2.html'"></button></span>
                             </div>
                         </div>
                     </div>
@@ -109,59 +115,59 @@
             </div>
         </div>
     </div>
-        <div id="footer-text">
-        </div>
-        <footer id="footer">
-            <h2>Ota yhteyttä</h2>
-            <br></br>
-            <hr class="footer-section-divider">
-            <br></br>
-            <div id="contact-container"></div>
-            <div id="left-footer-container">
-                <form id="contact-form-element">
-                    <label for="name">Nimi *:</label>
-                    <input type="text" id="name" name="name" required>
+    <div id="footer-text">
+    </div>
+    <footer id="footer">
+        <h2>Ota yhteyttä</h2>
+        <br></br>
+        <hr class="footer-section-divider">
+        <br></br>
+        <div id="contact-container"></div>
+        <div id="left-footer-container">
+            <form id="contact-form-element">
+                <label for="name">Nimi *:</label>
+                <input type="text" id="name" name="name" required>
 
-                    <label for="email">Sähköposti *:</label>
-                    <input type="email" id="email" name="email" required>
+                <label for="email">Sähköposti *:</label>
+                <input type="email" id="email" name="email" required>
 
 
-                    <label for="message">Viesti *:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <div class="form-group">
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="privacy" name="privacy" required>
-                            <span>Hyväksyn, että tietojani käytetään yhteydenottoa varten.</span>
-                        </label>
-                    </div>
-                    <div id="recaptcha-container" class="g-recaptcha" data-sitekey=""></div>
-                    <button id="submit-button" type="submit">Lähetä</button>
-                    <div id="form-status" style="margin-top: 16px; font-weight: 600;"></div>
-                </form>
-                <script src="config.js"></script>
-                <script src="contact.js"></script>
-            </div>
-
-            <div id="right-footer-container">
-                <div id="footer-info">
-                    <p>Puh. <a href="tel:0401903317">
-                            <p>040 190 3317</p>
-                        </a></p>
-                    <br>
-                    <p>Sähköposti: <a href="mailto:vaino.pyrro@gmail.com">
-                            <p>vaino.pyrro@gmail.com</p>
-                        </a></p>
-                    <br>
-                    <p> Y-tunnus:
-                    <p> 3477417-8 </p>
-                    </p>
-
+                <label for="message">Viesti *:</label>
+                <textarea id="message" name="message" required></textarea>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <span>Hyväksyn, että tietojani käytetään yhteydenottoa varten.</span>
+                    </label>
                 </div>
-            </div>
-        </footer>
+                <div id="recaptcha-container" class="g-recaptcha" data-sitekey=""></div>
+                <button id="submit-button" type="submit">Lähetä</button>
+                <div id="form-status" style="margin-top: 16px; font-weight: 600;"></div>
+            </form>
+            <script src="config.js"></script>
+            <script src="contact.js"></script>
+        </div>
 
-        <!-- Structured Data for SEO -->
-        <script type="application/ld+json">
+        <div id="right-footer-container">
+            <div id="footer-info">
+                <p>Puh. <a href="tel:0401903317">
+                        <p>040 190 3317</p>
+                    </a></p>
+                <br>
+                <p>Sähköposti: <a href="mailto:vaino.pyrro@gmail.com">
+                        <p>vaino.pyrro@gmail.com</p>
+                    </a></p>
+                <br>
+                <p> Y-tunnus:
+                <p> 3477417-8 </p>
+                </p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",

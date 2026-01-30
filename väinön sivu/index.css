@@ -490,6 +490,45 @@ header img:hover {
     transform: translateY(0);
 }
 
+/* ===== PROJECT ITEMS (Referenssit) ===== */
+.project-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.project-item h3 {
+    margin: 0;
+}
+
+.read-more-btn {
+    background: linear-gradient(135deg, #012a1c 0%, #024d30 100%);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.read-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(1, 42, 28, 0.3);
+}
+
 /* ===== FOOTER / CONTACT SECTION ===== */
 footer {
     background: linear-gradient(135deg, #012a1c 0%, #013d28 100%);
@@ -716,19 +755,10 @@ footer::after {
     overflow: hidden;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 12px 24px;
+    padding: 24px 32px;
     margin: 12px 0;
-    max-width: 500px;
-}
-
-.service-card:nth-child(odd) {
-    margin-right: auto;
+    max-width: 540px;
     margin-left: 0;
-}
-
-.service-card:nth-child(even) {
-    margin-left: auto;
-    margin-right: 0;
 }
 
 .service-card ul li {

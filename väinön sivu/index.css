@@ -378,26 +378,88 @@ header img:hover {
 
 .project-gallery {
     display: flex;
-    flex-direction: row;
-    gap: 24px;
-    padding: 0 40px 40px;
-    min-width: 400px;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 80px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .project-card {
+    display: flex;
+    align-items: center;
     background: white;
-    border-radius: 16px;
+    padding: 28px 36px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
     overflow: hidden;
+    border-radius: 16px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 400px;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: linear-gradient(135deg, #012a1c 0%, #024d30 100%);
+    border-radius: 16px 0 0 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+.project-card:hover .project-arrow {
+    transform: translateX(8px);
+    color: #012a1c;
+}
+
+.project-card:hover .project-number {
+    color: #024d30;
+}
+
+.project-number {
+    font-size: 42px;
+    font-weight: 800;
+    color: #e0e5e3;
+    margin-right: 32px;
+    font-family: 'Segoe UI', sans-serif;
+    transition: color 0.3s ease;
+    min-width: 70px;
+}
+
+.project-card .project-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.project-card .project-info h3 {
+    color: #012a1c;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.project-arrow {
+    font-size: 24px;
+    color: #ccc;
+    transition: all 0.3s ease;
+    margin-left: 24px;
 }
 
 .project-card img {
@@ -405,24 +467,6 @@ header img:hover {
     height: 220px;
     object-fit: cover;
     display: block;
-}
-
-.project-info {
-    padding: 24px;
-}
-
-.project-info h3 {
-    color: #012a1c;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-
-.project-info p {
-    color: #555;
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 12px;
 }
 
 .project-meta {

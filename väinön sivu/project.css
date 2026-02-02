@@ -167,6 +167,18 @@ header img:hover {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
 }
 
+/* Remove background when gallery contains video */
+.gallery:has(#gallery-video) {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.gallery:has(#gallery-video):hover {
+    transform: none;
+    box-shadow: none;
+}
+
 #gallery-image {
     width: 100%;
     height: auto;
@@ -180,6 +192,16 @@ header img:hover {
 
 #gallery-image:hover {
     transform: scale(1.03);
+}
+
+#gallery-video {
+    
+    max-width: 500px;
+    max-height: 550px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
 }
 
 .gallery-controls {
@@ -311,6 +333,10 @@ header img:hover {
     #about-text {
         max-width: 100%;
     }
+
+    #gallery-video {
+        max-width: 500px;
+    }
 }
 
 /* Tablet - Small (768px and below) */
@@ -373,6 +399,10 @@ header img:hover {
         width: 60px;
         height: 3px;
         margin-bottom: 24px;
+    }
+
+    #gallery-video {
+        max-width: 400px;
     }
 }
 
@@ -449,6 +479,11 @@ header img:hover {
         width: 50px;
         height: 3px;
         margin-bottom: 20px;
+    }
+
+    #gallery-video {
+        max-width: 100%;
+        border-radius: 8px;
     }
 }
 

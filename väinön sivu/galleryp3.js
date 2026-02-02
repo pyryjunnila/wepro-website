@@ -1,9 +1,12 @@
 const images = [
-    'lattia.jpeg',
-    'lattiaremppa aloitus.jpeg',
-    'lattiaremppa valikuva.jpeg',
-    'lattiaremppa valikuva2.jpeg',
-    'lattiaremppa2.jpeg',
+    'p2.jpeg',
+    'p2.1.jpeg',
+    'p2.2.jpeg',
+    'p2.3.jpeg',
+    'p2.4.jpeg',
+    'p2.5.jpeg',
+    'p2.6.jpeg',
+    'p2.7.jpeg',
 ];
 
 let currentIndex = 0;

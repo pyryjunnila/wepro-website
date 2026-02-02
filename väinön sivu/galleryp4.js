@@ -1,6 +1,9 @@
 const images = [
     'katto1.jpeg',
-    'kattoremppa valikuva2.jpeg',
+    'p4.1.jpeg',
+    'p4.2.jpeg',
+    'p4.3.jpeg',
+    'p4.4.jpeg',
 ];
 
 let currentIndex = 0;

@@ -1,5 +1,10 @@
 const images = [
-    'huoneistoremontti1.jpeg',
+    'p5.1.jpeg',
+    'p5.2.jpeg',
+    'p5.3.jpeg',
+    'p5.4.jpeg',
+    'p5.6.jpeg',
+    'p5.5.jpeg',
 ];
 
 let currentIndex = 0;
@@ -36,4 +41,3 @@ setInterval(() => {
     currentIndex = (currentIndex + 1) % images.length;
     updateGallery();
 }, 5000);
-

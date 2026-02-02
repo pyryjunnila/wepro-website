@@ -18,6 +18,22 @@
     <meta property="og:url" content="https://wepro-rakennus.fi/project1.html">
     <title>Referenssi 2 - Wepro Rakennus</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('gallery-video');
+            if (video) {
+                video.muted = true;
+                video.addEventListener('play', function() {
+                    video.muted = true;
+                });
+                video.addEventListener('volumechange', function() {
+                    if (!video.muted) {
+                        video.muted = true;
+                    }
+                });
+            }
+        });
+    </script>
 </head>
 
 <body>

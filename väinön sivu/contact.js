@@ -7,6 +7,13 @@ document.getElementById("contact-form-element").addEventListener("submit", funct
     const statusDiv = document.getElementById("form-status");
     const submitBtn = document.querySelector("#submit-button");
     
+    // Check if hCaptcha is loaded (cookies accepted)
+    if (typeof hcaptcha === 'undefined') {
+        statusDiv.style.color = "#dc3545";
+        statusDiv.textContent = "Hyväksy evästeet käyttääksesi lomaketta.";
+        return;
+    }
+    
     // Check if hCaptcha is completed
     const hcaptchaResponse = hcaptcha.getResponse();
     if (!hcaptchaResponse) {

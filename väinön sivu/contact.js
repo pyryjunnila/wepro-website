@@ -1,22 +1,15 @@
 // Initialize EmailJS
 emailjs.init(window.EMAIL_CONFIG.publicKey);
 
-// Render reCAPTCHA v2 checkbox when the API is ready
-function onloadCallback() {
-    grecaptcha.render('recaptcha-container', {
-        'sitekey': window.RECAPTCHA_CONFIG.siteKey
-    });
-}
-
 document.getElementById("contact-form-element").addEventListener("submit", function(event) {
     event.preventDefault();
     
     const statusDiv = document.getElementById("form-status");
     const submitBtn = document.querySelector("#submit-button");
     
-    // Check if reCAPTCHA is completed
-    const recaptchaResponse = grecaptcha.getResponse();
-    if (!recaptchaResponse) {
+    // Check if hCaptcha is completed
+    const hcaptchaResponse = hcaptcha.getResponse();
+    if (!hcaptchaResponse) {
         statusDiv.style.color = "#dc3545";
         statusDiv.textContent = "Vahvista, että et ole robotti.";
         return;
@@ -32,7 +25,7 @@ document.getElementById("contact-form-element").addEventListener("submit", funct
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         message: document.getElementById("message").value,
-        recaptcha_token: recaptchaResponse
+        hcaptcha_token: hcaptchaResponse
     };
     
     // Send email to YOU (your inbox)
@@ -45,14 +38,14 @@ document.getElementById("contact-form-element").addEventListener("submit", funct
             statusDiv.style.color = "#28a745";
             statusDiv.textContent = "Viesti lähetetty onnistuneesti!";
             document.getElementById("contact-form-element").reset();
-            grecaptcha.reset(); // Reset the checkbox
+            hcaptcha.reset(); // Reset the checkbox
             submitBtn.disabled = false;
             submitBtn.textContent = "Lähetä";
         })
         .catch(function(error) {
             statusDiv.style.color = "#dc3545";
             statusDiv.textContent = "Viestin lähetys epäonnistui. Yritä uudelleen.";
-            grecaptcha.reset(); // Reset the checkbox
+            hcaptcha.reset(); // Reset the checkbox
             submitBtn.disabled = false;
             submitBtn.textContent = "Lähetä";
             console.error("EmailJS Error:", error);

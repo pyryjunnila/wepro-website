@@ -5,6 +5,6 @@ window.EMAIL_CONFIG = {
     template2: "template_8ajfoh9"
 };
 
-window.RECAPTCHA_CONFIG = {
-    siteKey: "6Le3GE8sAAAAAOxiJQd9LzRYB9AKZeOVtwgovU1v"
+window.HCAPTCHA_CONFIG = {
+    siteKey: "767acd5c-ff06-4e26-943a-aa7a49fabe48"
 };

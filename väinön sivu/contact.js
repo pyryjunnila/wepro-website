@@ -7,6 +7,14 @@ document.getElementById("contact-form-element").addEventListener("submit", funct
     const statusDiv = document.getElementById("form-status");
     const submitBtn = document.querySelector("#submit-button");
     
+    // Check if privacy policy is accepted
+    const privacyCheckbox = document.getElementById("privacy");
+    if (!privacyCheckbox.checked) {
+        statusDiv.style.color = "#dc3545";
+        statusDiv.textContent = "Hyväksy tietosuojaseloste jatkaaksesi.";
+        return;
+    }
+    
     // Check if hCaptcha is completed
     const hcaptchaResponse = hcaptcha.getResponse();
     if (!hcaptchaResponse) {

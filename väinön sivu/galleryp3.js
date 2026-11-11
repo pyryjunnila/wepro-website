@@ -7,6 +7,7 @@ const images = [
     'p2.5.jpeg',
     'p2.6.jpeg',
     'p2.7.jpeg',
+    'p2.8.jpeg',
 ];
 
 let currentIndex = 0;
